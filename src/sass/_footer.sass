@@ -1,0 +1,95 @@
+.footer
+	background: #363b3f
+	padding: 70px 0 30px
+	+font-ral(400)
+	color: #e7e7e8
+
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	&__form-inner
+		width: 30%
+
+.form
+	&__input
+		display: block
+		border-radius: 3px
+		padding: 5px 15px
+		font-size: 20px
+		margin-bottom: 10px
+		width: 100%
+		+font-ral(500)
+
+	&__select
+		background: #fff
+		
+		&--is-open
+			.form__checkbox
+				visibility: visible
+				opacity: 1
+				animation: is-open 1s ease forwards 0s
+
+	&__checkbox
+		visibility: hidden
+		opacity: 0
+		animation: is-close 1s ease forwards 0s
+
+	&__info
+		font-size: 11px
+		text-align: justify
+
+		&--color
+			color: #428bca
+		
+.footer__select-title
+	position: relative
+	cursor: pointer 
+
+	&:after
+		display: block
+		content: ''
+		position: absolute
+		top: 5px
+		right: 20px
+		width: 10px
+		height: 10px
+		border-right: 2px solid #75758b
+		border-top: 2px solid #75758b
+		transform: rotate(135deg)
+			
+
+
+.checkbox
+	margin-right: 10px
+
+	&__label
+		display: block
+		font-size: 16px
+		padding: 3px
+
+@keyframes is-open
+	0% 
+		opacity: 0
+		height: 0
+	50% 
+		opacity: 0
+	100% 
+		opacity: 1
+		height: 450px
+ 
+@keyframes is-close
+	0% 
+		opacity: 1
+		height: 450px
+	50% 
+		opacity: 1
+	100% 
+		opacity: 0
+		height: 0
+
+
+
+
+

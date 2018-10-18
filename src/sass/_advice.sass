@@ -1,0 +1,113 @@
+.advice
+	text-align: center
+
+	&__title
+		font-size: 36px
+		padding: 100px 0 44px
+
+	&__header-text
+		display: inline-block
+		padding: 24px 0 23px
+		margin: 74px 0 24px
+		border-radius: 8px
+		border: 2px solid #fff
+		color: #fff
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		width: 445px
+
+	&__text-inner
+		padding: 48px 0 100px
+		text-align: left
+	
+	&__text
+		position: relative
+		padding-bottom: 27px
+		display: inline-block
+		margin-left: 42px
+		width: 60%
+
+		&:before
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 0%
+			left: 0%
+			margin-left: -22px
+			margin-top: 5px
+			width: 10px
+			height: 10px
+			border-radius: 10px
+			background: #00d8d3
+
+	&__item1
+		.advice__header
+			background: url(../img/bg/advice1.png)
+			background-repeat: no-repeat
+			background-size: cover
+			text-align: left
+
+			&-text
+				margin-top: 156px
+
+	&__item2
+		.advice__header
+			position: relative
+			background: url(../img/bg/advice2.png), no-repeat
+			background-size: cover
+			text-align: right
+			overflow: hidden
+
+			&-after
+				position: relative
+
+				&:after
+					+subtitle-after
+					width: 100%
+					content: ''
+					right: 100%
+
+		.advice__text
+			margin-left: 40%
+			
+	&__item3
+		.advice__header
+			background: url(../img/bg/advice3.png), no-repeat
+			background-size: cover
+			text-align: left
+			overflow: hidden
+
+			&-after
+				position: relative
+
+				&:after
+					+subtitle-after
+					content: ''
+					width: 100%
+					left: 100%
+
+	&__item4
+		.advice__header
+			background: url(../img/bg/advice4.png), no-repeat
+			background-size: cover
+
+		.advice__text-inner
+			text-align: center
+
+		.advice__text
+			width: 85%
+			margin-left: 0
+			&:before
+				display: none
+
+	&__item5
+		.advice__header
+			background: url(../img/bg/advice5.png), no-repeat
+			background-size: cover
+			text-align: left
+
+	
+
+	
+			
