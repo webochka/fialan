@@ -1,5 +1,6 @@
-import 'paroller.js'
-import 'jquery-lazy'
+import 'paroller.js';
+import 'jquery-lazy';
+import 'slick-carousel';
 
 $(".about__bg, [data-paroller-factor]").paroller({ 
 	factor: 0.5, 
@@ -62,7 +63,11 @@ fSelectTitle.addEventListener('click', (e)=>{
     fSelect.classList.toggle('form__select--is-open');
 })
 
-
+$('.footer__news-inner').slick({
+  slidesToShow: 1,
+  nextArrow: '.footer__news-next',
+  prevArrow: '.footer__news-prev'
+});
 
  
 

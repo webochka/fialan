@@ -69,6 +69,7 @@
   "dependencies": {
     "jquery-lazy": "^1.7.10",
     "jquery-lazyload": "^1.9.7",
-    "paroller.js": "^1.4.4"
+    "paroller.js": "^1.4.4",
+    "slick-carousel": "^1.8.1"
   }
 }

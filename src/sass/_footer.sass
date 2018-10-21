@@ -8,9 +8,71 @@
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		border-bottom: 1px solid #00a8e7
+		padding-bottom: 50px
+
 
 	&__form-inner
 		width: 30%
+
+	&__title
+		font-size: 24px
+		font-weight: 500
+		padding-bottom: 20px
+
+	&__news
+		width: 30%
+
+	&__subtitle
+
+	&__news-date
+		display: inline-block
+		text-align: center
+		vertical-align: top
+		font-size: 11px
+		text-transform: uppercase
+		letter-spacing: 3px
+
+	&__news-day
+		font-size: 24px
+		font-weight: 600
+		padding-bottom: 5px
+		border-bottom: 1px solid #00a8e7
+
+	&__news-button
+		width: 40px
+		height: 40px
+		border-radius: 40px
+		background: rgba(#000, 0.1)
+		color: #00a8e7
+		margin: 20px 10px 0 0
+		transition: all 0.2s linear
+		font-size: 25px
+		font-weight: 700
+		
+
+		&:hover
+
+			background: #00a8e7
+			color: #fff
+			transition: all 0.2s linear
+
+	&__link
+		display: inline-block
+		padding-left: 10px
+		width: 80%
+		color: #fff
+		padding-top: 5px
+		font-size: 18px
+		text-decoration: none
+
+		&:hover
+			color: #00a8e7
+
+	&__text
+		color: #949595
+		padding-top: 20px
+		font-size: 14px
 
 .form
 	&__input
@@ -21,6 +83,7 @@
 		margin-bottom: 10px
 		width: 100%
 		+font-ral(500)
+		color: #757575
 
 	&__select
 		background: #fff
@@ -36,12 +99,24 @@
 		opacity: 0
 		animation: is-close 1s ease forwards 0s
 
+
 	&__info
 		font-size: 11px
 		text-align: justify
 
 		&--color
 			color: #428bca
+
+	&__button
+		margin-top: 20px
+		background: #1d87b5
+		color: #fff
+		padding: 10px
+		border-radius: 3px
+		font-size: 13px
+
+		&:hover
+			background: rgba(#1d87b5, 0.9)
 		
 .footer__select-title
 	position: relative
@@ -63,11 +138,13 @@
 
 .checkbox
 	margin-right: 10px
+	cursor: pointer
 
 	&__label
 		display: block
 		font-size: 16px
 		padding: 3px
+		cursor: pointer
 
 @keyframes is-open
 	0% 
@@ -77,12 +154,12 @@
 		opacity: 0
 	100% 
 		opacity: 1
-		height: 450px
+		height: 360px
  
 @keyframes is-close
 	0% 
 		opacity: 1
-		height: 450px
+		height: 360px
 	50% 
 		opacity: 1
 	100% 
