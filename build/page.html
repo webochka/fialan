@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet" />
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
   <body>
@@ -202,10 +202,10 @@
             <div class="footer__form-inner">
               <p class="footer__title">Свяжитесь с нами</p>
               <form action="" class="footer__form form">
-                <input class="form__input footer__input" type="text" placeholder="Ваше имя:">
-                <input class="form__input footer__input" type="text" placeholder="Ваш электронный адрес:">
-                <input class="form__input footer__input" type="text" placeholder="Ваш номер телефона:">
-                <input class="form__input footer__input" type="text" placeholder="Ваш город:">
+                <input class="form__input footer__input" type="text" placeholder="Ваше имя:" />
+                <input class="form__input footer__input" type="text" placeholder="Ваш электронный адрес:" />
+                <input class="form__input footer__input" type="text" placeholder="Ваш номер телефона:" />
+                <input class="form__input footer__input" type="text" placeholder="Ваш город:" />
                 <div class="form__input form__select" id="fSelect">
                   <p id="fSelectTitle" class="footer__select-title">Вид услуги:</p>
                   <div class="form__checkbox">
@@ -279,7 +279,71 @@
                 <</button> <button class="footer__news-button footer__news-next">>
               </button>
             </div>
-            <div class="footer__contacts">
+            <div class="footer__contacts-inner">
+              <nav class="footer__nav">
+                <p class="footer__nav-text">Киев</p>
+                <p class="footer__nav-text">Одесса</p>
+                <p class="footer__nav-text">Китай</p>
+                <p class="footer__nav-text">США</p>
+              </nav>
+              <div class="footer__contacts">
+                <div>
+                  <div class="footer__contacts-title">
+                    <i class="footer__icon">
+                      <img src="img/icons/loc-icon.png" alt="" />
+                    </i>
+                    <h3 class="footer__contacts-text">Киев</h3>
+                  </div>
+                  <p class="footer__contacts-text">ул. Гайдара 58/10, БЦ Европассаж, оф. 31 </p>
+                  <span class="footer__contacts-text">Телефон:</span>
+                  <a href="tel:+380442233232" class="footer__contacts-link">+38 (044) 223-32-32 </a>
+                  <p class="footer__contacts-text">Директор офиса — Татьяна Терина</p>
+                  <div class="footer__map" id="kievMap"></div>
+                </div>
+                <div>
+                  <div class="footer__contacts-title">
+                    <i class="footer__icon">
+                      <img src="img/icons/loc-icon.png" alt="" />
+                    </i>
+                    <h3 class="footer__contacts-text">Одесса</h3>
+                  </div>
+                  <p class="footer__contacts-text">ул. Дальницкая, 50/21 </p>
+                  <span class="footer__contacts-text">Телефон:</span>
+                  <a href="tel:+380442233232" class="footer__contacts-link">+38 (044) 223-32-32 </a>
+                  <p class="footer__contacts-text">Директор офиса — Колебошина Анна</p>
+                  <div class="footer__map" id="odessaMap"></div>
+                </div>
+                <div>
+                  <div class="footer__contacts-title">
+                    <i class="footer__icon">
+                      <img src="img/icons/loc-icon.png" alt="" />
+                    </i>
+                    <h3 class="footer__contacts-text">China, Guangdong</h3>
+                  </div>
+                  <p class="footer__contacts-text">Guangzhou city, Tianhe district, MaChang Road 16, R&F Ying Sheng Plaza, A Building, office 2206 </p>
+                  <span class="footer__contacts-text">Tel.:</span>
+                  <a href="tel:+864008300201" class="footer__contacts-link">+86 (400) 830-02-01</a>
+                  <p class="footer__contacts-text">Директор офиса — Роман Кривошеев</p>
+                  <div class="footer__map" id="ChinaMap"></div>
+                </div>
+                <div>
+                  <div class="footer__contacts-title">
+                    <i class="footer__icon">
+                      <img src="img/icons/loc-icon.png" alt="" />
+                    </i>
+                    <h3 class="footer__contacts-text">Miami, Boca Raton</h3>
+                  </div>
+                  <p class="footer__contacts-text">East Impex LLC, 10236 Boca Entrada Blvd, #132</p>
+                  <span class="footer__contacts-text">Tel.:</span>
+                  <a href="tel:+17865089740" class="footer__contacts-link">+1 (786) 508-97-40</a><br />
+                  <span class="footer__contacts-text">Tel.:</span>
+                  <a href="tel:+13476033440" class="footer__contacts-link">+1 (347) 603-34-40</a>
+                  <p class="footer__contacts-text">Boca Raton, FL 33428, US</p>
+                  <span class="footer__contacts-text">Email:</span>
+                  <a href="mailto:usa@fialan.com" class="footer__contacts-link">usa@fialan.com</a>
+                  <div class="footer__map" id="usaMap"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -287,6 +351,7 @@
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVv3aW69pR_kV75ef7nu68hNTEBRpWv1Q&callback=initMap"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>
